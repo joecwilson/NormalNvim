@@ -41,6 +41,7 @@ return {
     }
   },
 
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   --  astrotheme [theme]
   --  https://github.com/AstroNvim/astrotheme
   {
