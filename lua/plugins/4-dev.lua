@@ -292,16 +292,6 @@ return {
     },
   },
 
-  --  [markdown markmap]
-  --  https://github.com/zeioth/markmap.nvim
-  --  Important: Make sure you have yarn in your PATH before running markmap.
-  {
-    "zeioth/markmap.nvim",
-    build = "yarn global add markmap-cli",
-    cmd = { "MarkmapOpen", "MarkmapSave", "MarkmapWatch", "MarkmapWatchStop" },
-    config = function(_, opts) require("markmap").setup(opts) end,
-  },
-
   --  COMPILER ----------------------------------------------------------------
   --  compiler.nvim [compiler]
   --  https://github.com/zeioth/compiler.nvim
