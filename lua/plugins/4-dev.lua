@@ -41,6 +41,27 @@
 local is_windows = vim.fn.has('win32') == 1 -- true if on windows
 
 return {
+  -- CUSTOM PLUGINS
+  -- Vim tmux navigation
+  -- https://github.com/christoomey/vim-tmux-navigator
+  {
+    "christoomey/vim-tmux-navigator",
+    cmd = {
+      "TmuxNavigateLeft",
+      "TmuxNavigateDown",
+      "TmuxNavigateUp",
+      "TmuxNavigateRight",
+      "TmuxNavigatePrevious",
+    },
+    keys = {
+      { "<C-h>", "<cmd><C-U>TmuxNavigateLeft<cr>" },
+      { "<C-j>", "<cmd><C-U>TmuxNavigateDown<cr>" },
+      { "<C-k>", "<cmd><C-U>TmuxNavigateUp<cr>" },
+      { "<C-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
+      { "<C-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
+    },
+  },
+
   --  SNIPPETS ----------------------------------------------------------------
   --  Vim Snippets engine  [snippet engine] + [snippet templates]
   --  https://github.com/L3MON4D3/LuaSnip
